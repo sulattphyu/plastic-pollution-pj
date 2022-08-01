@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form for plasitc pollution project</title>
+	
+	<style type="text/css">
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+	
+	body{
+		background: skyblue;
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+	}
+
+	.container p{
+		
+		color: #777;
+		font-size: 13px;
+	}
+
+	.container{
+		
+		font-family:Raleway;
+		width: 585px;
+		height: 480px;
+		background: #fff;
+		border-radius: 25px;
+	}
+
+	h3,p{
+		margin-left: 25px;		
+	}
+	h3{
+		font-size: 32px;
+	}
+	p{
+		font-size: 14px;
+		margin-right: 200px;
+	}
+	
+	.yourname, .youremail{
+		display: block;
+		width: 230px;
+		height: 30px;
+		float: left;
+		margin-left: 27px;
+		background: silver;
+		padding-left: 15px;
+	}
+	.amount{
+		display: block;
+		width: 170px;
+		height: 30px;
+		float: right;
+		margin-right: 30px;
+		background: silver;
+		padding-left: 15px;
+		margin-top: -10px;
+	}
+
+	span{
+		margin-left: 25px;
+	}
+
+
+	.twenty{
+		margin-left: 25px;
+	}
+
+	.coname{
+		display: block;
+		width: 509px;
+		height: 30px;
+		margin-left: 27px;
+		background: silver;
+		padding-left: 15px;
+	}
+
+	.tosendemail{
+		margin-left: 25px;
+	}
+
+	button{
+		width: 530px;
+		height: 40px;
+		border-radius: 5px;
+		background: green;
+		margin-left: 25px;
+		color: white;
+		font-size: 20px;
+	}
+	</style>
+
+</head>
+<body>
+	<div class="container">
+			<h3>Make a Donation</h3>
+			<p>Everydonation no matter how big or small makes a significant difference to our source. Thank you for doing your part to help.</p>
+		<form>
+			<input type="text" class="yourname" name="yourname" placeholder="Your name">
+			<input type="email" class="youremail" name="youremail" placeholder="Your email">
+			<br><br><br>
+			<span>Donation amount</span><br><br>
+
+			<label><input type="radio" class="twenty" name="money" id="twenty">$20</label>
+			<label><input type="radio" name="money" id="forty">$40</label>
+			<label><input type="radio" name="money" id="sixty">$60</label>
+			<label><input type="radio" name="money" id="eighty">$80</label>
+			<label><input type="radio" name="money" id="hundred">$100</label>
+			<label><input type="radio" name="money" id="other">Other</label>
+			<input type="number" class="amount" name="amount" placeholder="Amount" min="101">
+			<br><br><br>
+			<input type="text" class="coname" name="companyname" placeholder="Company name (if applicable)">
+			<br><br>
+			<label><input type="radio" class="tosendemail" name="tosendemail">I would like to recieve occasional updates via email</label>
+			<br><br>
+			<button>Submit Donation</button>
+		</form>
+	</div>
+</body>
+</html>
